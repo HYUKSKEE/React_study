@@ -5,6 +5,49 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
+}
+.black-nav{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.list{
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal{
+  margin-top: 20px;
+  padding: 20px;
+  background: #eee;
+}
+
+.update{
+  margin: auto;
+  margin-top: 30px;
+  width: 300px;
+  height: 50px;
+}
+.update input{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 80%;
+  border: 1px solid gray;
+}
+
+.update button{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
 }
 .black-nav {
   background-color: black;
