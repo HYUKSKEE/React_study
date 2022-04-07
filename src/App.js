@@ -24,9 +24,7 @@ function App() {
   //});
 
   function sortButton() {
-    var newArray = [
-      ...글제목,
-    ]; /* var newArray = 글제목  <== 복사가 아닌 값공유가 일어남 이렇게 쓰지마! deep copy 방식인 [...글제목] 이렇게 써*/
+    var newArray = [...글제목];
     글제목변경(newArray.sort());
   }
 
