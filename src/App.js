@@ -30,9 +30,9 @@ function App() {
 
   function detail() {
     var newArray = [...글제목];
-    newArray[0] = "아티스트 추천";
-    newArray[1] = "본인 추천";
-    newArray[2] = "남친 추천";
+    newArray[0] = "(쉽게보기)아티스트 추천";
+    newArray[1] = "(쉽게보기)본인 추천";
+    newArray[2] = "(쉽게보기)남친 추천";
     글제목변경(newArray);
   }
 
@@ -40,10 +40,20 @@ function App() {
   function test() {
     return post;
   }
+
+  function refresh() {
+    window.location.reload();
+  }
+
+  function date() {
+    return Date();
+  }
   return (
     <div className="App">
       <div className="black-nav">
-        <div style={{ color: "gray", fontSize: "20px" }}>혁스키 blog</div>
+        <div onClick={refresh} style={{ color: "gray", fontSize: "20px" }}>
+          혁스키 blog
+        </div>
       </div>
       <h4>{test()}</h4>
       <button onClick={sortButton} title="가나다순으로 정렬하자!">
@@ -76,7 +86,7 @@ function App() {
               </span>{" "}
               {like}
             </h3>
-            <p>3월19일 발행</p>
+            <p>${date()}</p>
             <hr />
           </div>
         );
